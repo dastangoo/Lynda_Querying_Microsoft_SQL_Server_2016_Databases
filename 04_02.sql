@@ -6,3 +6,4 @@ FROM Person.Person AS per
 JOIN HumanResources.Employee AS hre ON hre.BusinessEntityID = per.BusinessEntityID;
 GO
 
+
