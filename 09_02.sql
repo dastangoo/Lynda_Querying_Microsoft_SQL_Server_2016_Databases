@@ -1,0 +1,23 @@
+USE AdventureWorks2014;
+GO
+
+-- SET STATISTICS TIME ON;
+-- SET STATISTICS IO ON;
+-- SET STATISTICS PROFILE ON;
+SET STATISTICS XML ON;
+GO
+
+SELECT *
+FROM Person.Person;
+GO
+
+SELECT p.Name, pr.ProductReviewID, pr.Comments
+FROM Production.Product p
+INNER JOIN Production.ProductReview pr
+ON p.ProductID = pr.ProductID;
+GO
+
+
+-- SET STATISTICS TIME OFF
+-- SET STATISTICS IO OFF
+SET STATISTICS PROFILE OFF;
